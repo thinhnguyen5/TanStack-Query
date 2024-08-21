@@ -1,10 +1,11 @@
 import "./App.css";
 import { QueryClientProvider, QueryClient } from "react-query";
-import { ReactQueryDevtools } from 'react-query/devtools'
+import { ReactQueryDevtools } from "react-query/devtools";
 import HomePage from "./components/HomePage";
 import SuperHeroesPage from "./components/SuperHeroesPage";
 import RQSuperHeroesPage from "./components/RQSuperHeroesPage";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import ParallelQueriesPage from "./components/ParallelQueriesPage";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,8 @@ function App() {
             </ul>
           </nav>
           <Routes>
+            <Route path="/rq-parallel" element={<ParallelQueriesPage />} />
+
             <Route path="/super-heroes" element={<SuperHeroesPage />} />
 
             <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
@@ -37,7 +40,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-      <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
 }

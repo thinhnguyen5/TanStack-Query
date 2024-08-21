@@ -12,7 +12,8 @@ const RQSuperHeroesPage = () => {
 
   const { isLoading, data, isError, error, isFetching } = useQuery("super-heroes", fetchSuperHeroes,
     {
-      cacheTime: 5000
+      // refetchInterval: 2000,
+      // refetchIntervalInBackground: true
     }
   );
 
