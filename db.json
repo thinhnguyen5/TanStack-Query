@@ -21,5 +21,19 @@
     { "id": 1, "name": "Chandler Bing" },
     { "id": 2, "name": "Joey Tribbiani" },
     { "id": 3, "name": "Rachel Green" }
+  ],
+
+  "users": [
+    {
+      "id": "123@example.com",
+      "channelId": "codevolution"
+    }
+  ],
+
+  "channels": [
+    {
+      "id": "codevolution",
+      "courses": ["react", "vue", "angular"]
+    }
   ]
 }
