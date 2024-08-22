@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ParallelQueriesPage from "./components/ParallelQueriesPage";
 import DynamicParallelPage from "./components/DynamicParallelPage";
 import DependentQueries from "./components/DependentQueries";
+import PaginatedQueriesPage from "./components/PaginatedQueriesPage";
 
 const queryClient = new QueryClient();
 
@@ -30,9 +31,17 @@ function App() {
               <li>
                 <Link to="/rq-super-heroes">RQ Super Heroes</Link>
               </li>
+
+              <li>
+                <Link to="/rq-paginated">Paginated</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
+            <Route path='/rq-paginated' element={<PaginatedQueriesPage />}>
+
+            </Route>
+
             <Route
               path="/rq-dependent"
               element={<DependentQueries email="123@example.com" />}
