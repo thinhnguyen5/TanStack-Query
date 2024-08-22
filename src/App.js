@@ -3,6 +3,7 @@ import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import HomePage from "./components/HomePage";
 import SuperHeroesPage from "./components/SuperHeroesPage";
+import RQSuperHeroPage from "./components/RQSuperHeroPage";
 import RQSuperHeroesPage from "./components/RQSuperHeroesPage";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ParallelQueriesPage from "./components/ParallelQueriesPage";
@@ -31,6 +32,11 @@ function App() {
           </nav>
           <Routes>
             <Route path="/rq-parallel" element={<ParallelQueriesPage />} />
+
+            <Route
+              path="/rq-super-heroes/:heroId"
+              element={<RQSuperHeroPage />}
+            />
 
             <Route path="/super-heroes" element={<SuperHeroesPage />} />
 
