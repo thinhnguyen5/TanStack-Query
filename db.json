@@ -14,29 +14,63 @@
       "id": 3,
       "name": "Wonder Woman 1",
       "alterego": "Princess Diana"
+    },
+    {
+      "name": "hehe",
+      "alterEgo": "hehe",
+      "id": 4
+    },
+    {
+      "name": "hehe",
+      "alterEgo": "hehe",
+      "id": 5
+    },
+    {
+      "name": "1",
+      "alterEgo": "2",
+      "id": 6
+    },
+    {
+      "name": "da",
+      "alterego": "dad",
+      "id": 7
+    },
+    {
+      "name": "dada",
+      "alterego": "adadassssssssssssss",
+      "id": 8
     }
   ],
-
   "friends": [
-    { "id": 1, "name": "Chandler Bing" },
-    { "id": 2, "name": "Joey Tribbiani" },
-    { "id": 3, "name": "Rachel Green" }
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": 3,
+      "name": "Rachel Green"
+    }
   ],
-
   "users": [
     {
       "id": "123@example.com",
       "channelId": "codevolution"
     }
   ],
-
   "channels": [
     {
       "id": "codevolution",
-      "courses": ["react", "vue", "angular"]
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
-
   "colors": [
     {
       "id": 1,
